@@ -1,0 +1,10 @@
+C:\Users\Manager\source\repos\Pedido\Pedido\bin\Debug\Pedido.exe.config
+C:\Users\Manager\source\repos\Pedido\Pedido\bin\Debug\Pedido.exe
+C:\Users\Manager\source\repos\Pedido\Pedido\bin\Debug\Pedido.pdb
+C:\Users\Manager\source\repos\Pedido\Pedido\obj\Debug\Pedido.csproj.AssemblyReference.cache
+C:\Users\Manager\source\repos\Pedido\Pedido\obj\Debug\Pedido.Form1.resources
+C:\Users\Manager\source\repos\Pedido\Pedido\obj\Debug\Pedido.Properties.Resources.resources
+C:\Users\Manager\source\repos\Pedido\Pedido\obj\Debug\Pedido.csproj.GenerateResource.cache
+C:\Users\Manager\source\repos\Pedido\Pedido\obj\Debug\Pedido.csproj.CoreCompileInputs.cache
+C:\Users\Manager\source\repos\Pedido\Pedido\obj\Debug\Pedido.exe
+C:\Users\Manager\source\repos\Pedido\Pedido\obj\Debug\Pedido.pdb
