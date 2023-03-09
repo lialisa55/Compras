@@ -29,9 +29,13 @@ namespace Pedido
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,10 +45,8 @@ namespace Pedido
             this.PRODi = new System.Windows.Forms.TextBox();
             this.TotalT = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +62,36 @@ namespace Pedido
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(543, 222);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // Produto
+            // 
+            this.Produto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Produto.HeaderText = "Produto";
+            this.Produto.Name = "Produto";
+            // 
+            // ValUnit
+            // 
+            dataGridViewCellStyle3.Format = "C2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.ValUnit.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ValUnit.HeaderText = "Valor unitário";
+            this.ValUnit.Name = "ValUnit";
+            this.ValUnit.Width = 125;
+            // 
+            // Quan
+            // 
+            this.Quan.HeaderText = "Quantidade";
+            this.Quan.Name = "Quan";
+            this.Quan.Width = 125;
+            // 
+            // TotalG
+            // 
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.TotalG.DefaultCellStyle = dataGridViewCellStyle4;
+            this.TotalG.HeaderText = "Total";
+            this.TotalG.Name = "TotalG";
+            this.TotalG.Width = 125;
             // 
             // label1
             // 
@@ -135,41 +167,33 @@ namespace Pedido
             this.label4.TabIndex = 8;
             this.label4.Text = "Total";
             // 
-            // Produto
+            // btnLimpar
             // 
-            this.Produto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Produto.HeaderText = "Produto";
-            this.Produto.Name = "Produto";
+            this.btnLimpar.Location = new System.Drawing.Point(42, 323);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 10;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // ValUnit
+            // btnExcluir
             // 
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.ValUnit.DefaultCellStyle = dataGridViewCellStyle1;
-            this.ValUnit.HeaderText = "Valor unitário";
-            this.ValUnit.Name = "ValUnit";
-            this.ValUnit.Width = 125;
-            // 
-            // Quan
-            // 
-            this.Quan.HeaderText = "Quantidade";
-            this.Quan.Name = "Quan";
-            this.Quan.Width = 125;
-            // 
-            // TotalG
-            // 
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.TotalG.DefaultCellStyle = dataGridViewCellStyle2;
-            this.TotalG.HeaderText = "Total";
-            this.TotalG.Name = "TotalG";
-            this.TotalG.Width = 125;
+            this.btnExcluir.Location = new System.Drawing.Point(136, 323);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 11;
+            this.btnExcluir.Text = "Excluir registro";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 356);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.TotalT);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.PRODi);
@@ -204,6 +228,8 @@ namespace Pedido
         private System.Windows.Forms.DataGridViewTextBoxColumn ValUnit;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quan;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalG;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }
 
